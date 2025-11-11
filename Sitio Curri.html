@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jousef Antonio Urrutia Guevara – Portafolio</title>
+  <meta name="description" content="Sitio personal con CV, habilidades, formación, diplomas, contacto y enlaces." />
+  <style>
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --panel:#111827; /* gray-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --accent:#22d3ee; /* cyan-400 */
+      --pill:#1f2937; /* gray-800 */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;line-height:1.6;background:linear-gradient(120deg,#0b1220,#0f172a 40%,#0b1220);color:var(--text)}
+    header{position:sticky;top:0;background:rgba(17,24,39,.7);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937;z-index:10}
+    nav{max-width:1100px;margin:0 auto;display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+    nav a{color:var(--text);text-decoration:none;padding:.5rem .75rem;border-radius:.6rem}
+    nav a:hover{background:var(--pill)}
+    .container{max-width:1100px;margin:0 auto;padding:2rem 1rem}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+    h1{font-size:clamp(1.8rem,2.5vw,2.6rem);margin:.25rem 0}
+    h2{font-size:clamp(1.3rem,2vw,1.8rem);margin:2rem 0 .75rem;border-left:4px solid var(--accent);padding-left:.6rem}
+    p.lead{color:var(--muted);margin:.2rem 0 .8rem}
+    .badge{display:inline-block;background:var(--pill);padding:.3rem .6rem;border-radius:999px;margin:.2rem .3rem .2rem 0;font-size:.9rem;color:var(--text)}
+    .panel{background:var(--panel);border:1px solid #1f2937;border-radius:1rem;padding:1rem}
+    .grid{display:grid;gap:1rem}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:#0b1220;border:1px solid #1f2937;border-radius:1rem;padding:1rem}
+    .muted{color:var(--muted)}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:.8rem;border:1px solid #1f2937}
+    .links a{display:inline-block;margin-right:.75rem;margin-bottom:.5rem;color:var(--accent)}
+    footer{border-top:1px solid #1f2937;margin-top:2rem;padding:1.5rem 0;color:var(--muted)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Jousef A. Urrutia Guevara</strong></div>
+      <div>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Aptitudes</a>
+        <a href="#formacion">Formación</a>
+        <a href="#diplomas">Diplomas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="sobre-mi">
+      <div>
+        <h1>Hola, soy <span style="color:var(--accent)">Jousef Antonio Urrutia Guevara</span></h1>
+        <p class="lead">Tecnologías de la Información · Español nativo · Inglés B1 (Intermedio)</p>
+        <p class="muted">Puntual, responsable y orientado al trabajo en equipo. Actualmente en formación universitaria, con prácticas profesionales y bases en programación y sistemas.</p>
+        <div class="links" style="margin-top:.75rem">
+          <a href="mailto:tony.guevara@gmail.com">✉️ Envíame un correo</a>
+          <a href="tel:+526181552909">📞 Llamar ahora</a>
+          <a href="https://maps.google.com/?q=San+Lorenzo+132,+Ex+Hacienda+de+Tapias,+Durango" target="_blank" rel="noopener">📍 Ver dirección</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <h2 style="margin-top:0">Contacto</h2>
+        <p><strong>Tel:</strong> <a href="tel:+526181552909">+52 618 155 2909</a></p>
+        <p><strong>Email:</strong> <a href="mailto:tony.guevara@gmail.com">tony.guevara@gmail.com</a></p>
+        <p><strong>Dirección:</strong> San Lorenzo #132, Ex Hacienda de Tapias, 34305 Durango, Dgo.</p>
+      </aside>
+    </section>
+
+
+    <section class="gallery" aria-labelledby="galeria-titulo">
+      <h2 id="galeria-titulo">Galería</h2>
+      <div class="grid grid-3">
+         <img src="images/foto1.jpg" alt="Yo trabajando en proyecto" />
+        <img src="images/foto2.jpg" alt="Foto de equipo" />
+        <img src="images/foto3.jpg" alt="Presentación o evento" />
+      </div>
+    </section>
+
+   <!-- VIDEO (mín. 1) -->
+<section aria-labelledby="video-titulo">
+  <h2 id="video-titulo">Video corto</h2>
+  <div class="card">
+    <!-- Video de YouTube: Programando una página en Visual Studio Code -->
+    <div style="position:relative;padding-top:56.25%">
+  <iframe
+    title="Programando en Visual Studio Code"
+    width="560" height="315"
+    src="https://www.youtube.com/embed/BvL7XXelmWI?start=404&autoplay=1&mute=1&loop=1&playlist=BvL7XXelmWI&controls=0&modestbranding=1&rel=0"
+    style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:.8rem"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+
+    <p class="muted" style="margin-top:.6rem">
+    </p>
+  </div>
+</section>
+
+
+
+    <!-- APTITUDES -->
+    <section id="habilidades" aria-labelledby="aptitudes-titulo">
+      <h2 id="aptitudes-titulo">Aptitudes</h2>
+      <div class="panel">
+        <span class="badge">Puntualidad y compromiso (Experto)</span>
+        <span class="badge">Trabajo en equipo (Avanzado)</span>
+        <span class="badge">Puntualidad y responsabilidad (Experto)</span>
+        <span class="badge">Amabilidad y simpatía (Experto)</span>
+        <span class="badge">Disponibilidad horaria (Muy avanzado)</span>
+      </div>
+    </section>
+
+    <!-- DIPLOMAS / CERTIFICADOS -->
+    <section id="diplomas" aria-labelledby="diplomas-titulo">
+      <h2 id="diplomas-titulo">Diplomas y Certificados</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <strong>AWS Academy Cloud Foundations</strong>
+          <p class="muted">Fundamentos de computación en la nube.</p>
+          <a href="https://www.awsacademy.com/" target="_blank" rel="noopener">Ver programa</a>
+        </div>
+        <div class="card">
+          <strong>NDG Linux Essentials (Partner)</strong>
+          <p class="muted">Conceptos básicos de Linux y línea de comandos.</p>
+          <a href="https://www.netdevgroup.com/online/courses/linux-essentials/" target="_blank" rel="noopener">Más información</a>
+        </div>
+        <div class="card">
+          <strong>Introduction to Packet Tracer</strong>
+          <p class="muted">Simulación de redes con Cisco Packet Tracer.</p>
+          <a href="https://www.netacad.com/courses/packet-tracer" target="_blank" rel="noopener">NetAcad</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section id="formacion" aria-labelledby="formacion-titulo">
+      <h2 id="formacion-titulo">Formación Académica</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <strong>Tecnologías de la Información</strong>
+          <p class="muted">Universidad Tecnológica de Durango • 09/2022 – En curso</p>
+        </div>
+        <div class="card">
+          <strong>Técnico en Programación</strong>
+          <p class="muted">CBTIS 89 • 08/2019 – 07/2022</p>
+        </div>
+        <div class="card">
+          <strong>Programación</strong>
+          <p class="muted">Escuela Secundaria Técnica No. 19 • 08/2016 – 06/2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA / PRÁCTICAS -->
+    <section aria-labelledby="exp-titulo">
+      <h2 id="exp-titulo">Historial laboral</h2>
+      <div class="panel">
+        <p><strong>Estudiante en prácticas</strong> — Apoyo en actividades de TI y programación.</p>
+      </div>
+    </section>
+
+    <!-- ENLACES (mín. 3) -->
+    <section aria-labelledby="links-titulo">
+      <h2 id="links-titulo">Enlaces</h2>
+      <p class="muted">Algunos accesos rápidos:</p>
+      <div class="links">
+        <a href="mailto:tony.guevara@gmail.com">Correo</a>
+        <a href="tel:+526181552909">Teléfono</a>
+        <a href="https://maps.google.com/?q=San+Lorenzo+132,+Ex+Hacienda+de+Tapias,+Durango" target="_blank" rel="noopener">Dirección</a>
+        <!-- Puedes añadir más: LinkedIn, GitHub, portafolio de proyectos, etc. -->
+      </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto">
+      <small>© <span id="y"></span> Jousef Antonio Urrutia Guevara — Sitio personal</small>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
